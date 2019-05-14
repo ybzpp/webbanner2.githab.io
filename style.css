@@ -1,0 +1,316 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+#container {
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 768px;
+    height: 1024px;
+    background-image: url(img/background.jpg);
+}
+
+#slide_02,
+#slide_03 {
+    opacity: 0;
+    display: none;
+    position: absolute;
+    top: 50%;
+}
+
+.slides {
+    position: relative;
+    justify-self: center;
+    width: 640px;
+    height: 1024px;
+}
+
+.buttons_valut_active,
+.buttons_valut_noactive
+{
+    width: 640px;
+    height: 135px;
+    border: 2px solid #fff200;
+    border-radius: 65px;
+    text-align: center;
+    color: #fff200;
+    text-transform: uppercase;
+    font-size: 56px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    position: absolute;
+    line-height: 135px;
+}
+
+#button_01 {
+    top: 29%;
+}
+
+#button_02 {
+    top: 46%;
+}
+
+#button_03 {
+    top: 63%;
+}
+
+.buttons_valut_active:hover {
+    background: #fff20020;
+    cursor: pointer;
+}
+
+#slide_01_block_top {
+    position: relative;
+    height: 160px;
+    width: 640px;
+    justify-self: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 46px;
+    font-weight: 400;
+    padding-top: 140px;
+    text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.51);
+}
+
+#slide_01_block_bot {
+    width: 640px;
+    justify-self: center;
+    text-align: center;
+    color: #fff200;
+    font-size: 36px;
+    font-weight: 400;
+    padding-top: 80px;
+    position: absolute;
+    bottom: 70px;
+    text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.51);
+}
+
+#button__sell:hover,
+#button__buy:hover {
+    position: relative;
+    width: 640px;
+    height: 135px;
+    border: 2px solid #ffff00;
+    background-color: #ffff00;
+    border-radius: 65px;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-size: 56px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    vertical-align: middle;
+    line-height: 135px;
+    cursor: pointer;
+}
+
+#button__buy__animation {
+    position: relative;
+    width: 640px;
+    height: 135px;
+    border: 2px solid #ffff00;
+    background-color: #ffff00;
+    border-radius: 65px;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-size: 56px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    vertical-align: middle;
+    line-height: 135px;
+}
+
+#button__sell,
+#button__buy {
+    position: relative;
+    width: 640px;
+    height: 135px;
+    border: 2px solid white;
+    border-radius: 65px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 56px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    opacity: 0;
+    vertical-align: middle;
+    line-height: 135px;
+    display: none;
+}
+
+.gif {
+    height: 450px;
+    width: 500px;
+    border-radius: 25px;
+}
+
+#pop-up {
+    background-color: rgba(141, 187, 32, 0.5);
+    width: 500px;
+    height: 450px;
+    position: absolute;
+    top: 20%;
+    border-radius: 25px;
+    display: none;
+    opacity: 0;
+    box-shadow: 0px 20px 20px 0px;
+}
+
+#text__02,
+#text__01,
+#text__02__string,
+#text__01__string {
+    display: none;
+}
+
+#block_pop-up {
+    display: flex;
+    justify-content: center;
+}
+
+#block_pop-up_content_bot {
+    bottom: -365px;
+    position: absolute;
+}
+
+#block_pop-up_content_top {
+    top: 32px;
+    position: absolute;
+}
+
+.text__pop-up{
+    text-align: center;
+    color: white;
+    font-size: 46px;
+    font-weight: 400;
+        top: 10px;
+        text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.51);
+}
+
+#slide_04_center {
+    position: absolute;
+    width: 640px;
+    text-align: center;
+    color: #ff002a;
+    font-size: 182px;
+    font-weight: 700;
+    top: 465px;
+}
+
+#slide_04_top,
+#slide_05_top {
+    position: absolute;
+    justify-self: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 68px;
+    font-weight: 400;
+    top: 235px;
+    width: 640px;
+}
+
+#button__reset {
+    position: absolute;
+    width: 640px;
+    height: 135px;
+    border: 2px solid #ffff00;
+    background-color: #ffff00;
+    border-radius: 65px;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-size: 44px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    vertical-align: middle;
+    line-height: 135px;
+    top: 800px;
+    display: none;
+    opacity: 0;
+}
+
+#button__reset:hover {
+    color: #ff002a;
+    cursor: pointer;
+}
+
+#slide_04_container,
+#slide_05_container,
+#slide_06_container {
+    width: 640px;
+    height: 1024px;
+    position: absolute;
+    display: none;
+    opacity: 0;
+}
+
+#slide_06 {
+display: flex;
+justify-content: center;
+}
+
+#slide_05_center {
+    position: absolute;
+    width: 640px;
+    text-align: center;
+    color: #ffff00;
+    font-size: 182px;
+    font-weight: 700;
+    top: 465px;
+}
+
+#slide_06_top {
+    position: absolute;
+    justify-self: center;
+    left:50%; 
+    margin-left:-25%;
+    top: 65px;
+}
+
+#slide_06_center {
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 37px;
+    font-weight: 400;
+    top: 360px;
+}
+
+#button_demo {
+    width: 640px;
+    height: 135px;
+    border: 2px solid #fff200;
+    border-radius: 65px;
+    text-align: center;
+    color: #fff200;
+    font-weight: 300;
+    vertical-align: middle;
+    line-height: 135px;
+    margin-bottom: 30px;
+    position: absolute;
+    font-size: 35px;
+    text-transform: inherit;
+    top: 600px;
+    text-decoration:none;
+    display: none;
+    opacity: 0;
+}
+#button_demo:hover {
+background: #fff20020;
+cursor: pointer;
+}
+
+.bold-text {
+    color: #fff200;
+}
